@@ -192,5 +192,5 @@ while running:
 pygame.quit()
 sys.exit()
 
-# adding gravity and center of mass
+# adding center of mass
 # also instead of making a seperate calculation for the x and the y coordinate why not make the function calcluate the spring force on the both sides of the line if length of line == current length, but i think its more memory consuming
