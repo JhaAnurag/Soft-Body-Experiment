@@ -104,7 +104,7 @@ while running:
             c.y = screen_height - c.radius*k
             c.vy *= -COR
             
-    if right_mouse_pressed:#for moving the central vertex when mouse is pressed
+    if right_mouse_pressed: #for moving the central vertex when mouse is pressed
         rand = random.random()
         circle.x, circle.vx = spring_motion(
             circle.x, circle.vx, mouse_x, spring_constant, damping_factor
@@ -112,7 +112,7 @@ while running:
         circle.y, circle.vy = spring_motion(
             circle.y, circle.vy, mouse_y, spring_constant, damping_factor
         )
-    else:# only gravity will affect
+    else: # only gravity will affect
         circle.vy += GravConst #calculation of gravity
         circle.x += circle.vx
         circle.y += circle.vy
@@ -178,6 +178,3 @@ while running:
 
 pygame.quit()
 sys.exit()
-
-# adding center of mass
-# also instead of making a seperate calculation for the x and the y coordinate why not make the function calcluate the spring force on the both sides of the line if length of line == current length, but i think its more memory consuming
