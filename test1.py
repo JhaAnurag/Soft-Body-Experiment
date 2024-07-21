@@ -54,22 +54,9 @@ def spring_motion(position, velocity, target, spring_constant, damping_factor): 
     spring_force = spring_constant * displacement
     damping_force = velocity * damping_factor
     acceleration = spring_force - damping_force
-    # if grav == True:
-    #     acceleration += GravConst
     velocity += acceleration
     position += velocity
     return position, velocity
-
-
-def circ(R,nPoints):
-    angle =2*math.pi/nPoints
-    lx = [0,]
-    for i in range(n):
-        y = math.sin((i+1)*angle)*R
-        x = math.cos((i+1)*angle)*R
-        lx.append(lx[i]+x)
-    return Lx,Ly
-
 
 
 # Main game loop
