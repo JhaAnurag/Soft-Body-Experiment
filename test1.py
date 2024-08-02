@@ -10,7 +10,7 @@ pygame.init()
 # Set up the display
 screen_width, screen_height = 600, 1000
 screen = pygame.display.set_mode((screen_width, screen_height))
-pygame.display.set_caption("Springy Rectangular Softbody")
+pygame.display.set_caption("test1")
 
 # Colors
 WHITE = (255, 255, 255)
